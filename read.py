@@ -14,3 +14,10 @@ for d in data:
 	sum_len += len(d)
 
 print("コメントの平均長さは", sum_len/len(data))
+
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print("合計",len(new),"のコメントは100文字未満です。")
+print(new[1])
